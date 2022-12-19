@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "usestrict";
+
+      let som = function () {
+        var totaal = 0;
+        let lengte = arguments.length;
+        for (let i = 0; i < lengte; i++) {
+          if (typeof arguments[i] == "number") {
+            totaal = totaal + arguments[i];
+          }
+        }
+        return totaal;
+      };
+
+      console.log(som(2, "g", 2, 7, 9));
+    </script>
+  </body>
+</html>
